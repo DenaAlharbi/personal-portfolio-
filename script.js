@@ -1,19 +1,28 @@
 document.querySelectorAll('.section-header').forEach(header => {
     header.addEventListener('click', () => {
         const content = header.nextElementSibling;
-        const isOpen = content.style.maxHeight;
 
-        // Collapse all sections first
         document.querySelectorAll('.section-content').forEach(c => {
-            c.style.maxHeight = null;
-            c.style.opacity = 0;
+            if (c !== content) {
+                c.style.maxHeight = null;
+                c.style.opacity = 0;
+            }
         });
 
-        // Expand clicked section
-        if (!isOpen) {
+        if (content.style.maxHeight) {
+            content.style.maxHeight = null;
+            content.style.opacity = 0;
+        } else {
             content.style.maxHeight = content.scrollHeight + "px";
             content.style.opacity = 1;
         }
     });
 });
+
+// Smooth scroll feature
+function scrollToSection(id) {
+    const section = document.getElementById(id);
+    section.scrollIntoView({ behavior: 'smooth' });
+}
+
 
