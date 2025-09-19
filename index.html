@@ -7,23 +7,16 @@
     <script src="script.js" defer></script>
 
 </head>
+
 <header class="header">
-    <div class="right-section">
-        <div class="name-block">
-            <hr class="line">  <!-- this will create the line i will later need to edit it in css -->
-            <h2>Dena Alharbi</h2>
-        </div>
-    </div>
-
-    <div class="logo-section">
-        <img src="images/logo-removebg-preview (1).png" alt="My Logo" class="logo">
-    </div>
-
-    <div class="left-section">
-        <hr class="line">
-        <div class="intro-block">
-            <p>Hi! I'm a KFUPM software engineering student who loves web development and data science.
-                I made this portfolio to share my work and passion—glad you're here!👋</p>
+    <div class="logo-line-wrapper">
+        <!-- Left Block: Intro + Line + Icons -->
+        <div class="side-block left-block">
+            <p class="intro-text">
+                Hi! I'm a KFUPM software engineering student who loves web development and data science.
+                I made this portfolio to share my work and passion—glad you're here!👋
+            </p>
+            <div class="line"></div>
             <div class="social-icons">
                 <a href="https://www.linkedin.com/in/dena-alharbi/" target="_blank">
                     <img src="images/linkedin.png" alt="LinkedIn">
@@ -38,6 +31,15 @@
                     <img src="images/email_logo-removebg-preview.png" alt="email">
                 </a>
             </div>
+        </div>
+
+        <!-- Center Logo -->
+        <img src="images/logo-removebg-preview (1).png" alt="My Logo" class="logo">
+
+        <!-- Right Block: Name + Line -->
+        <div class="side-block right-block">
+            <h2 class="name">Dena Alharbi</h2>
+            <div class="line"></div>
         </div>
     </div>
     <div class="scroll-arrow" onclick="scrollToSection('about-section')">↓</div>
