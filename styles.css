@@ -137,7 +137,7 @@ html, body {
     transition: border-color 0.3s ease, box-shadow 0.3s ease;
 }
 .section-block:hover {
-    border-color: #ffffff; /* subtle border on hover */
+    border-color: rgba(255, 255, 255, 0.47); /* subtle border on hover */
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
 }
 
@@ -152,7 +152,7 @@ html, body {
 }
 
 .section-header:hover {
-    background-color: #ffffff;
+    background-color: rgba(255, 255, 255, 0);
 }
 
 .section-content {
@@ -163,6 +163,12 @@ html, body {
     transition: max-height 0.6s ease, opacity 0.6s ease;
 }
 
+.about-text {
+    text-align: center;
+    padding: 0 40px;
+    max-width: 700px;
+    margin: 0 auto;
+}
 
 
 /* projects*/
