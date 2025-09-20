@@ -24,5 +24,8 @@ function scrollToSection(id) {
     const section = document.getElementById(id);
     section.scrollIntoView({ behavior: 'smooth' });
 }
-
+function toggleMenu() {
+    const menu = document.getElementById("dropdownMenu");
+    menu.style.display = menu.style.display === "flex" ? "none" : "flex";
+}
 
