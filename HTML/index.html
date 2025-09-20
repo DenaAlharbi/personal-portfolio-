@@ -145,6 +145,18 @@
                 </a>
             </div>
         </div>
+        <script>
+            document.querySelectorAll('.project-card').forEach(link => {
+                link.addEventListener('click', function (e) {
+                    e.preventDefault();
+                    document.body.classList.add('fade-out');
+                    setTimeout(() => {
+                        window.location.href = this.href;
+                    }, 500); // match transition duration
+                });
+            });
+        </script>
+
     </section>
 
 

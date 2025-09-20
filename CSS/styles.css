@@ -243,6 +243,10 @@ html, body {
 .project-card {
     text-decoration: none;
 }
+.fade-out {
+    opacity: 0;
+    transition: opacity 0.7s ease;
+}
 
 .project-image {
     position: relative;

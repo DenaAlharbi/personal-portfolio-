@@ -64,3 +64,8 @@ body::after {
 .content-box a:hover {
     text-decoration: underline;
 }
+.fade-out {
+    opacity: 0;
+    transition: opacity 0.5s ease;
+}
+

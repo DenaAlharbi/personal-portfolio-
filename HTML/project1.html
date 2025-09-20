@@ -39,7 +39,18 @@
         <li><a href="https://www.linkedin.com/in/atheer-h-al-momtin-ba2438161/" target="_blank">Atheer Almomtan</a></li>
     </ul>
 </section>
-    <a href="index.html#projects-section" style="text-decoration: none; color: #ffffff; font-size: 20px;">← Go Back</a>
+    <a href="index.html#projects-section" id="backArrow" style="text-decoration: none; color: #ffffff; font-size: 20px;">← Go Back</a>
+    <script>
+        const backArrow = document.getElementById('backArrow');
+
+        backArrow.addEventListener('click', function (e) {
+            e.preventDefault();
+            document.body.classList.add('fade-out');
+            setTimeout(() => {
+                window.location.href = this.href;
+            }, 500); // match transition duration
+        });
+    </script>
 
 </div>
 <div class="gold-circles">
