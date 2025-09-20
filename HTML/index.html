@@ -19,18 +19,61 @@
                 I made this portfolio to <br>share my work and passion—glad you're here! 👋
             </p>
             <div class="social-icons">
-                <a href="https://www.linkedin.com/in/dena-alharbi/" target="_blank">
-                    <img src="../images/linkedin.png" alt="LinkedIn">
-                </a>
+
                 <a href="https://github.com/DenaAlharbi" target="_blank">
                     <img src="../images/github_logo_icon_229278.png" alt="Github">
+                </a>
+                <a href="https://www.linkedin.com/in/dena-alharbi/""target="_blank">
+                    <img src="../images/image-removebg-preview (10).png" alt="Linkedin">
                 </a>
                 <a href="https://x.com/winkwinkde" target="_blank">
                     <img src="../images/Xlogo-removebg-preview.png" alt="X">
                 </a>
-                <a href="mailto:denauni2022@gmail.com" target="_blank">
+                <!--<a href="mailto:denauni2022@gmail.com" target="_blank">
                     <img src="../images/email_logo-removebg-preview.png" alt="email">
-                </a>
+                </a>-->
+                <div class="email-trigger">Email me?</div>
+
+                <div class="email-modal" id="emailModal">
+                    <div class="email-modal-content">
+                        <span class="close-btn">&times;</span>
+                        <form>
+                            <label for="name">Name</label><br>
+                            <input type="text" id="name" name="name" required><br><br>
+
+                            <label for="email">Email</label><br>
+                            <input type="email" id="email" name="email" required><br><br>
+
+                            <label for="message">Message</label><br>
+                            <textarea id="message" name="message" rows="5" required></textarea><br><br>
+
+                            <button type="submit">Submit</button>
+                        </form>
+                        <script>
+                            const trigger = document.querySelector('.email-trigger');
+                            const modal = document.getElementById('emailModal');
+                            const closeBtn = document.querySelector('.close-btn');
+
+                            trigger.addEventListener('click', () => {
+                                modal.style.display = 'flex';
+                            });
+
+                            closeBtn.addEventListener('click', () => {
+                                modal.style.display = 'none';
+                            });
+
+                            window.addEventListener('click', (e) => {
+                                if (e.target === modal) {
+                                    modal.style.display = 'none';
+                                }
+                            });
+                        </script>
+
+                    </div>
+                </div>
+
+
+
             </div>
         </div>
     </div>
@@ -44,22 +87,10 @@
 </header>
 <header class="navbar">
     <div class="logo"><img src="../images/image-removebg-preview%20(9).png" alt="Dena Logo" class="logo" /></div>
-    <div class="menu-container">
-        <div class="menu-icon">&#9776;</div>
-        <div class="dropdown">
-            <a href="#">Home</a>
-            <a href="#">Projects</a>
-            <a href="#">Contact</a>
-        </div>
-    </div>
+
 </header>
 
-<!-- Optional dropdown menu -->
-<nav class="dropdown" id="dropdownMenu">
-    <a href="#">Home</a>
-    <a href="#">Projects</a>
-    <a href="#">Contact</a>
-</nav>
+
 <body>
 <div class="gold-circles">
     <svg width="600" height="600" viewBox="0 0 600 600">
