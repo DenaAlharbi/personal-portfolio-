@@ -38,12 +38,19 @@ body::after {
 
 
 }
-
-.gold-circles {
+.navbar-wrapper {
     position: fixed;
-    right: -50px; /* Push it off-screen to show only half */
-    top: 50%;
-    transform: translateY(-50%);
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 55px;
+    z-index: 1000;
+}
+.gold-circles {
+    position: absolute;
+    right: -40px; /* Push it off-screen to show only half */
+    top: 80%;
+    transform: translateY(-10%);
     z-index: 0;
     pointer-events: none;
     opacity: 0.2;
@@ -92,15 +99,15 @@ body::after {
 }
 
 .navbar {
-    position: fixed;
+    position: relative;
     top: -60px; /* hides it above the viewport */
     left: 0;
     width: 100%;
     height: 55px;
-    background-color: rgba(0, 0, 0, 0.45);
+    background-color: rgba(0, 0, 0, 0.23);
     backdrop-filter: blur(10px);
     font-family: 'Inter', sans-serif;
-    z-index: 1000;
+    z-index: 1;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -133,15 +140,20 @@ body::after {
     font-size: 15px; /* increased font size */
     font-weight: 500;
     text-transform: uppercase;
-    padding: 10px 0; /* better vertical spacing */
-    border-radius: 4px;
+    /*padding: 10px 0; !* better vertical spacing *!*/
+    /*border-radius: 4px;*/
+    line-height: 55px; /* vertically center text */
+    height: 100%; /* make it fill the navbar height */
+    border-left: 1px solid transparent;
+    border-right: 1px solid transparent;
     transition: all 0.3s ease;
 }
 
 .nav-links a:hover {
     color: white;
     /*background-color: rgba(255, 255, 0, 0.1);*/
-    border-color: rgba(255, 255, 0, 0.36);
+    border-left: 1px solid rgba(255, 255, 0, 0.33);
+    border-right: 1px solid rgba(255, 255, 0, 0.33);
 
 }
 
@@ -157,7 +169,7 @@ body::after {
     width: auto;
     object-fit:contain;
     /*margin-right: 20px; !* or even 10px for tighter spacing *! }*/
-    padding-left: 30%;}
+    padding-left: 10%;}
 
 
 .social-icons {
