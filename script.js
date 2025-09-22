@@ -1,4 +1,6 @@
-// Section toggle logic using class-based transitions
+// === Section Toggle Logic ===
+// When a section header is clicked, it toggles its content open/closed.
+// All other sections close automatically.
 document.querySelectorAll('.section-header').forEach(header => {
     header.addEventListener('click', () => {
         const content = header.nextElementSibling;
@@ -13,84 +15,40 @@ document.querySelectorAll('.section-header').forEach(header => {
     });
 });
 
-// Smooth scroll to section
+
+// === Smooth Scroll to Section ===
+// Scrolls smoothly to a section with the given ID.
 function scrollToSection(id) {
     const section = document.getElementById(id);
-    section.scrollIntoView({behavior: 'smooth'});
+    section.scrollIntoView({ behavior: 'smooth' });
 }
 
-// Toggle dropdown menu
-function toggleMenu() {
-    const menu = document.getElementById("dropdownMenu");
-    menu.style.display = menu.style.display === "flex" ? "none" : "flex";
-}
 
-// Smooth page transition for project links
-document.querySelectorAll('.project-link, #backArrow').forEach(link => {
-    link.addEventListener('click', function (e) {
-        e.preventDefault();
-        document.body.classList.add('fade-out');
-        setTimeout(() => {
-            window.location.href = this.href;
-        }, 500); // match transition duration
-    });
-});
-
-// Auto-open section if hash is present (e.g. #projects)
-window.addEventListener("DOMContentLoaded", () => {
-    const hash = window.location.hash;
-    if (hash) {
-        const section = document.querySelector(hash);
-        const header = section?.querySelector('.section-header');
-        if (header) {
-            header.click(); // simulate click to expand section
-        }
-    }
-});
-
+// === Navbar Reveal on Page Load ===
+// Adds a 'visible' class to the navbar after a short delay for a fade-in effect.
 window.addEventListener('load', () => {
     const navbar = document.querySelector('.navbar');
     setTimeout(() => {
         navbar.classList.add('visible');
-    }, 300); // delay for dramatic effect
+    }, 300);
 });
+
+
+// === Project Card Transition ===
+// When a project card is clicked, fades out the page before navigating.
 document.querySelectorAll('.project-card').forEach(link => {
     link.addEventListener('click', function (e) {
         e.preventDefault();
         document.body.classList.add('fade-out');
         setTimeout(() => {
             window.location.href = this.href;
-        }, 500); // match transition duration
+        }, 500);
     });
 });
-function toggleEmailOptions() {
-    const options = document.getElementById('emailOptions');
-    options.style.display = options.style.display === 'block' ? 'none' : 'block';
-}
-
-function openEmailModal() {
-    const modal = document.querySelector('.email-modal');
-    modal.style.display = 'flex';
-}
-const emailOptions = document.getElementById('emailOptions');
-const trigger = document.querySelector('.email-trigger');
-const modal = document.getElementById('emailModal');
-const closeBtn = document.querySelector('.close-btn');
-
-trigger.addEventListener('click', () => {
-    emailOptions.style.display = emailOptions.style.display === 'block' ? 'none' : 'block';
-});
 
 
-closeBtn.addEventListener('click', () => {
-    modal.style.display = 'none';
-});
-
-window.addEventListener('click', (e) => {
-    if (e.target === modal) {
-        modal.style.display = 'none';
-    }
-});
+// === Back Arrow Transition ===
+// Same fade-out effect when clicking a back arrow link.
 const backArrow = document.getElementById('backArrow');
 
 backArrow.addEventListener('click', function (e) {
@@ -98,21 +56,51 @@ backArrow.addEventListener('click', function (e) {
     document.body.classList.add('fade-out');
     setTimeout(() => {
         window.location.href = this.href;
-    }, 500); // match transition duration
+    }, 500);
 });
+
+
+
+document.querySelector('.section-header').addEventListener('click', function () {
+    const section = this.closest('.section-block');
+    const content = section.querySelector('.section-content');
+
+    // Toggle open class
+    content.classList.toggle('open');
+
+    // Wait for transition to finish, then scroll
+    setTimeout(() => {
+        section.scrollIntoView({ behavior: 'smooth', block: 'start' });
+    }, 500); // match your CSS transition duration
+});
+
+
+
+
+
+
+const trigger = document.querySelector('.email-trigger');
+const dropdown = document.querySelector('.email-options');
+const formLink = document.getElementById('formLink');
+const modal = document.getElementById('emailModal');
+const closeModal = document.getElementById('closeModal');
 
 trigger.addEventListener('click', () => {
-    emailOptions.style.display = emailOptions.style.display === 'flex' ? 'none' : 'flex';
+    dropdown.style.display = dropdown.style.display === 'block' ? 'none' : 'block';
 });
 
-// Close dropdown when clicking outside
-document.addEventListener('click', (e) => {
-    if (!trigger.contains(e.target) && !emailOptions.contains(e.target)) {
-        emailOptions.style.display = 'none';
-    }
+formLink.addEventListener('click', (e) => {
+    e.preventDefault();
+    modal.style.display = 'flex';
+    dropdown.style.display = 'none';
 });
 
-
-closeBtn.addEventListener('click', () => {
+closeModal.addEventListener('click', () => {
     modal.style.display = 'none';
+});
+
+window.addEventListener('click', (e) => {
+    if (e.target === modal) {
+        modal.style.display = 'none';
+    }
 });

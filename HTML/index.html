@@ -33,36 +33,47 @@
                 <a href="https://x.com/winkwinkde" target="_blank">
                     <img src="../images/Xlogo-removebg-preview.png" alt="X">
                 </a>
+                <div class="email-dropdown">
+                    <h1> Get in touch ✉️</h1>
 
-                <div class="email-trigger">Get in touch ✉️</div>
-
-                <div class="email-options" id="emailOptions">
-                    <button onclick="window.location.href='mailto:your@email.com'">Email via App</button>
-                    <button onclick="openEmailModal()">Use Contact Form</button>
+                    <label>
+                        <select class="email-trigger" name="emailChoice" size="2" >
+                            <option value="app">Via default app</option>
+                            <option value="form">Contact by form</option>
+                        </select>
+                    </label>
+                    <ul class="email-options">
+                        <li><a href="mailto:your@email.com">Email via App</a></li>
+                        <li><a href="#" id="formLink">Use Contact Form</a></li>
+                    </ul>
                 </div>
 
+                <!-- Contact Form Modal -->
                 <div class="email-modal" id="emailModal">
                     <div class="email-modal-content">
-                        <span class="close-btn">&times;</span>
+                        <span class="close-btn" id="closeModal">&times;</span>
                         <form>
-                            <label for="name">Name</label><br>
-                            <input type="text" id="name" name="name" required><br><br>
+                            <label for="name">Name</label>
+                            <input type="text" id="name" placeholder="Your name">
 
-                            <label for="email">Email</label><br>
-                            <input type="email" id="email" name="email" required><br><br>
+                            <label for="email">Email</label>
+                            <input type="email" id="email" placeholder="Your email">
 
-                            <label for="message">Message</label><br>
-                            <textarea id="message" name="message" rows="5" required></textarea><br><br>
+                            <label for="message">Message</label>
+                            <textarea id="message" rows="4" placeholder="Your message"></textarea>
 
-                            <button type="submit">Submit</button>
+                            <button type="submit">Send</button>
                         </form>
                     </div>
                 </div>
+
             </div>
         </div>
     </div>
+
     <div class="scroll-arrow" onclick="scrollToSection('about-section')">↓</div>
 </header>
+
 <div class="navbar-wrapper">
     <div class="gold-circles">
         <svg width="600" height="600" viewBox="0 0 600 600">
@@ -87,7 +98,7 @@
 <body>
 <main>
     <!-- About Section -->
-    <section class="section-block" id="about-section">
+    <section class="section-block" id="about-section" >
         <div class="section-header">ABOUT ME</div>
         <div class="section-content">
             <div class="about-text">
@@ -132,6 +143,77 @@
             </div>
         </div>
     </section>
+
+<!--    <section class="section-block" id="volunteering-section">-->
+<!--        <div class="section-header">VOLUNTEERING</div>-->
+<!--        <div class="section-content">-->
+<!--            <div class="volunteering-container">-->
+<!--                <h2>Timeline</h2>-->
+<!--                <div class="timeline-scroll">-->
+<!--                    <ul id='timeline'>-->
+<!--                        <li class='work'>-->
+<!--                            <input class='radio' id='work5' name='works' type='radio' checked>-->
+<!--                            <div class="relative">-->
+<!--                                <label for='work5'>Lorem ipsum dolor sit amet</label>-->
+<!--                                <span class='date'>12 May 2013</span>-->
+<!--                                <span class='circle'></span>-->
+<!--                            </div>-->
+<!--                            <div class='content'>-->
+<!--                                <p>-->
+<!--                                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Odio ea necessitatibus quo-->
+<!--                                    velit natus cupidita-->
+<!--                                </p>-->
+<!--                            </div>-->
+<!--                        </li>-->
+<!--                        <li class='work'>-->
+<!--                            <input class='radio' id='work4' name='works' type='radio'>-->
+<!--                            <div class="relative">-->
+<!--                                <label for='work4'>Lorem ipsum dolor sit amet</label>-->
+<!--                                <span class='date'>11 May 2013</span>-->
+<!--                                <span class='circle'></span>-->
+<!--                            </div>-->
+<!--                            <div class='content'>-->
+<!--                                <p>-->
+<!--                                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Odio ea necessitatibus quo-->
+<!--                                    velit natus cupiditate-->
+<!--                                </p>-->
+<!--                            </div>-->
+<!--                        </li>-->
+<!--                        <li class='work'>-->
+<!--                            <input class='radio' id='work3' name='works' type='radio'>-->
+<!--                            <div class="relative">-->
+<!--                                <label for='work3'>Lorem ipsum dolor sit amet</label>-->
+<!--                                <span class='date'>10 May 2013</span>-->
+<!--                                <span class='circle'></span>-->
+<!--                            </div>-->
+<!--                            <div class='content'>-->
+<!--                                <p>-->
+<!--                                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Odio ea necessitatibus quo-->
+<!--                                    velit natus cupiditate-->
+<!--                                </p>-->
+<!--                            </div>-->
+<!--                        </li>-->
+<!--                        <li class='work'>-->
+<!--                            <input class='radio' id='work2' name='works' type='radio'>-->
+<!--                            <div class="relative">-->
+<!--                                <label for='work2'>Lorem ipsum dolor sit amet</label>-->
+<!--                                <span class='date'>09 May 2013</span>-->
+<!--                                <span class='circle'></span>-->
+<!--                            </div>-->
+<!--                            <div class='content'>-->
+<!--                                <p>-->
+<!--                                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Odio ea necessitatibus quo-->
+<!--                                    velit natus-->
+<!--                                </p>-->
+<!--                            </div>-->
+<!--                        </li>-->
+
+<!--                    </ul>-->
+<!--                </div>-->
+<!--            </div>-->
+<!--        </div>-->
+<!--    </section>-->
+
     <!-- Skills Section -->
     <section class="section-block" id="skills-section">
         <div class="section-header">SKILLS</div>
@@ -166,9 +248,17 @@
     </section>
     <section class="section-block" id="honors-section">
         <div class="section-header">HONORS AND AWARDS</div>
-        <div class="section-content"></div>
-        <div class="honors-container"></div>
+        <div class="section-content">
+            <div class="honors-container">
+                <ul class="honors-list">
+                    <li>Deans Honors List</li>
+                    <li>Second Honors in 241 & 242</li>
+                    <li>Excellence in Report Writing Award - English Department</li>
+                </ul>
+            </div>
+        </div>
     </section>
 </main>
+
 </body>
 </html>
