@@ -116,7 +116,7 @@ body::after {
     max-width: 1000px;
     display: flex;
     align-items: center;
-    padding: 0 40px;
+    /*padding: 0 40px;*/
 }
 
 
@@ -151,7 +151,13 @@ body::after {
 }
 
 
-/* If using an image logo */ .logo img { height: 70px; width: auto; object-fit: contain; }
+/* If using an image logo */
+.logo img {
+    height: 70px;
+    width: auto;
+    object-fit:contain;
+    /*margin-right: 20px; !* or even 10px for tighter spacing *! }*/
+    padding-left: 30%;}
 
 
 .social-icons {
@@ -171,11 +177,6 @@ body::after {
     transform: scale(1.1);
 }
 
-}.name {
-     font-size: 28px;
-     font-weight: bold;
-     margin-bottom: 10px;
- }
 
 
 /*.intro-section {*/
