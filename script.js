@@ -63,13 +63,24 @@ document.querySelectorAll('.project-card').forEach(link => {
         }, 500); // match transition duration
     });
 });
+function toggleEmailOptions() {
+    const options = document.getElementById('emailOptions');
+    options.style.display = options.style.display === 'block' ? 'none' : 'block';
+}
+
+function openEmailModal() {
+    const modal = document.querySelector('.email-modal');
+    modal.style.display = 'flex';
+}
+const emailOptions = document.getElementById('emailOptions');
 const trigger = document.querySelector('.email-trigger');
 const modal = document.getElementById('emailModal');
 const closeBtn = document.querySelector('.close-btn');
 
 trigger.addEventListener('click', () => {
-    modal.style.display = 'flex';
+    emailOptions.style.display = emailOptions.style.display === 'block' ? 'none' : 'block';
 });
+
 
 closeBtn.addEventListener('click', () => {
     modal.style.display = 'none';
@@ -88,4 +99,20 @@ backArrow.addEventListener('click', function (e) {
     setTimeout(() => {
         window.location.href = this.href;
     }, 500); // match transition duration
+});
+
+trigger.addEventListener('click', () => {
+    emailOptions.style.display = emailOptions.style.display === 'flex' ? 'none' : 'flex';
+});
+
+// Close dropdown when clicking outside
+document.addEventListener('click', (e) => {
+    if (!trigger.contains(e.target) && !emailOptions.contains(e.target)) {
+        emailOptions.style.display = 'none';
+    }
+});
+
+
+closeBtn.addEventListener('click', () => {
+    modal.style.display = 'none';
 });
