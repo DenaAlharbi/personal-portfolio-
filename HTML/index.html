@@ -16,8 +16,9 @@
             <div class="intro-section">
                 <p class="hello-world">– Hello World</p>
                 <p class="intro-text">
-                    Hi! I'm Dena Alharbi a KFUPM software engineering student who loves web development and data science.<br>
-                    I made this portfolio to <br>share my work and passion—glad you're here! 👋
+                    Hi! I'm Dena Alharbi a KFUPM software engineering student who loves web development and data
+                    science.<br>
+                    I made this portfolio to <br>share my work and passion—glad you're here!
                 </p>
             </div>
 
@@ -27,14 +28,13 @@
                     <img src="../images/github_logo_icon_229278.png" alt="Github">
                 </a>
                 <a href="https://www.linkedin.com/in/dena-alharbi/""target="_blank">
-                    <img src="../images/image-removebg-preview (10).png" alt="Linkedin">
+                <img src="../images/image-removebg-preview (10).png" alt="Linkedin">
                 </a>
                 <a href="https://x.com/winkwinkde" target="_blank">
                     <img src="../images/Xlogo-removebg-preview.png" alt="X">
                 </a>
 
                 <div class="email-trigger">Get in touch via @</div>
-
                 <div class="email-modal" id="emailModal">
                     <div class="email-modal-content">
                         <span class="close-btn">&times;</span>
@@ -50,80 +50,50 @@
 
                             <button type="submit">Submit</button>
                         </form>
-                        <script>
-                            const trigger = document.querySelector('.email-trigger');
-                            const modal = document.getElementById('emailModal');
-                            const closeBtn = document.querySelector('.close-btn');
-
-                            trigger.addEventListener('click', () => {
-                                modal.style.display = 'flex';
-                            });
-
-                            closeBtn.addEventListener('click', () => {
-                                modal.style.display = 'none';
-                            });
-
-                            window.addEventListener('click', (e) => {
-                                if (e.target === modal) {
-                                    modal.style.display = 'none';
-                                }
-                            });
-                        </script>
-
                     </div>
                 </div>
-
-
-
             </div>
         </div>
     </div>
-
-
-
     <div class="scroll-arrow" onclick="scrollToSection('about-section')">↓</div>
-
-
-
 </header>
 <div class="navbar-wrapper">
-<div class="gold-circles">
-    <svg width="600" height="600" viewBox="0 0 600 600">
-        <circle cx="600" cy="150" r="50" stroke="#FFD700" stroke-width="1" fill="none" />
-        <circle cx="600" cy="150" r="150" stroke="#FFD700" stroke-width="1" fill="none" />
-        <circle cx="600" cy="150" r="250" stroke="#FFD700" stroke-width="1" fill="none" />
-        <circle cx="600" cy="150" r="350" stroke="#FFD700" stroke-width="1" fill="none" />
-        <circle cx="600" cy="150" r="450" stroke="#FFD700" stroke-width="1" fill="none" />
-    </svg>
-</div>
-<nav class="navbar">
-    <div class="logo">
-        <img src="../images/image-removebg-preview%20(9).png" alt="Dena Logo" class="logo" /></div>
-    <div class="nav-links">
-        <a href="#about-section">About Me</a>
-        <a href="#projects-section">Projects</a>
-        <a href="#skills-section">Skills</a>
-        <a href="#Honors-section">Honors & Awards</a>
+    <div class="gold-circles">
+        <svg width="600" height="600" viewBox="0 0 600 600">
+            <circle cx="600" cy="150" r="50" stroke="#FFD700" stroke-width="1" fill="none"/>
+            <circle cx="600" cy="150" r="150" stroke="#FFD700" stroke-width="1" fill="none"/>
+            <circle cx="600" cy="150" r="250" stroke="#FFD700" stroke-width="1" fill="none"/>
+            <circle cx="600" cy="150" r="350" stroke="#FFD700" stroke-width="1" fill="none"/>
+            <circle cx="600" cy="150" r="450" stroke="#FFD700" stroke-width="1" fill="none"/>
+        </svg>
     </div>
-</nav>
+    <nav class="navbar">
+        <div class="logo">
+            <img src="../images/image-removebg-preview%20(9).png" alt="Dena Logo" class="logo"/></div>
+        <div class="nav-links">
+            <a href="#about-section">About Me</a>
+            <a href="#projects-section">Projects</a>
+            <a href="#skills-section">Skills</a>
+            <a href="#honors-section">Honors & Awards</a>
+        </div>
+    </nav>
 </div>
-
-
 <body>
-
-
-
 <main>
     <!-- About Section -->
     <section class="section-block" id="about-section">
         <div class="section-header">ABOUT ME</div>
         <div class="section-content">
             <div class="about-text">
-            <p>I’m a Software Engineering honors student at KFUPM, passionate about web development and data science.<br>
-                I’ve interned at a data science camp where I worked with Python and Power BI to turn financial data into clear, actionable insights.<br>
-                I’ve also mentored students in ENGL101, led clubs like the Computer Club and Toastmasters, and contributed to marketing and public relations through the YLAB community.<br>
-                These experiences have shaped my ability to lead, communicate, and collaborate across disciplines.
-                This year, I’m actively pursuing a summer training opportunity to deepen my skills and gain hands-on experience in a professional setting.</p>
+                <p>I’m a Software Engineering honors student at KFUPM, passionate about web development and data
+                    science.<br>
+                    I’ve interned at a data science camp where I worked with Python and Power BI to turn financial data
+                    into clear, actionable insights.<br>
+                    I’ve also mentored students in ENGL101, led clubs like the Computer Club and Toastmasters, and
+                    contributed to marketing and public relations through the YLAB community.<br>
+                    These experiences have shaped my ability to lead, communicate, and collaborate across disciplines.
+                    This year, I’m actively pursuing a summer training opportunity to deepen my skills and gain hands-on
+                    experience in a professional setting.</p>
             </div>
         </div>
     </section>
@@ -155,52 +125,13 @@
                 </a>
             </div>
         </div>
-        <script>
-            document.querySelectorAll('.project-card').forEach(link => {
-                link.addEventListener('click', function (e) {
-                    e.preventDefault();
-                    document.body.classList.add('fade-out');
-                    setTimeout(() => {
-                        window.location.href = this.href;
-                    }, 500); // match transition duration
-                });
-            });
-        </script>
-
-    </section><!--
-    <section class="section-block" id="Posts-section">
-        <div class="section-header">X HIGHLIGHTS</div>
-        <div class="section-content">
-            <div class="posts-container">
-                <blockquote class="twitter-tweet" data-theme="dark">
-                    <p lang="en" dir="ltr">hey</p>
-                    &mdash; Dena (@winkwinkde) <a href="https://twitter.com/winkwinkde/status/1686432426497626122"></a>
-                    <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
-
-                </blockquote>
-                <blockquote class="twitter-tweet" data-theme="dark">
-                    <p lang="en" dir="ltr">hey</p>
-                    &mdash; Dena (@winkwinkde) <a href="https://twitter.com/winkwinkde/status/1668211959567663110?s=46"></a>
-                    <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
-
-                </blockquote>
-                <blockquote class="twitter-tweet" data-theme="dark">
-                    <p lang="en" dir="ltr">hey</p>
-                    &mdash; Dena (@winkwinkde) <a href="https://twitter.com/winkwinkde/status/1704524039497101760?s=46"></a>
-                    <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
-
-                </blockquote>
-
-
-            </div>
-        </div>
     </section>
--->
     <!-- Skills Section -->
     <section class="section-block" id="skills-section">
         <div class="section-header">SKILLS</div>
         <div class="section-content">
             <div class="skills-container">
+
                 <!-- Technical Skills -->
                 <div class="skill">HTML</div>
                 <div class="skill">CSS</div>
@@ -227,14 +158,11 @@
             </div>
         </div>
     </section>
-    <section class="section-block" id="Honors-section">
+    <section class="section-block" id="honors-section">
         <div class="section-header">HONORS AND AWARDS</div>
         <div class="section-content"></div>
-        <div class="Honors-container"></div>
+        <div class="honors-container"></div>
     </section>
-
 </main>
-
 </body>
-
 </html>

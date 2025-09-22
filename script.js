@@ -13,11 +13,10 @@ document.querySelectorAll('.section-header').forEach(header => {
     });
 });
 
-
 // Smooth scroll to section
 function scrollToSection(id) {
     const section = document.getElementById(id);
-    section.scrollIntoView({ behavior: 'smooth' });
+    section.scrollIntoView({behavior: 'smooth'});
 }
 
 // Toggle dropdown menu
@@ -49,9 +48,44 @@ window.addEventListener("DOMContentLoaded", () => {
     }
 });
 
-    window.addEventListener('load', () => {
+window.addEventListener('load', () => {
     const navbar = document.querySelector('.navbar');
     setTimeout(() => {
-    navbar.classList.add('visible');
-}, 300); // delay for dramatic effect
+        navbar.classList.add('visible');
+    }, 300); // delay for dramatic effect
+});
+document.querySelectorAll('.project-card').forEach(link => {
+    link.addEventListener('click', function (e) {
+        e.preventDefault();
+        document.body.classList.add('fade-out');
+        setTimeout(() => {
+            window.location.href = this.href;
+        }, 500); // match transition duration
+    });
+});
+const trigger = document.querySelector('.email-trigger');
+const modal = document.getElementById('emailModal');
+const closeBtn = document.querySelector('.close-btn');
+
+trigger.addEventListener('click', () => {
+    modal.style.display = 'flex';
+});
+
+closeBtn.addEventListener('click', () => {
+    modal.style.display = 'none';
+});
+
+window.addEventListener('click', (e) => {
+    if (e.target === modal) {
+        modal.style.display = 'none';
+    }
+});
+const backArrow = document.getElementById('backArrow');
+
+backArrow.addEventListener('click', function (e) {
+    e.preventDefault();
+    document.body.classList.add('fade-out');
+    setTimeout(() => {
+        window.location.href = this.href;
+    }, 500); // match transition duration
 });
