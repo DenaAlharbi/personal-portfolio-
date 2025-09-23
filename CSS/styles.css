@@ -434,11 +434,10 @@ body::after {
 }
 
 
-/*Arrow*/
-
+/* Arrow */
 .scroll-arrow {
     position: absolute;
-    bottom: 30px;
+    bottom: 2rem; /* ~32px */
     left: 50%;
     transform: translateX(-50%);
     font-size: 2rem;
@@ -452,28 +451,27 @@ body::after {
         transform: translateY(0);
     }
     50% {
-        transform: translateY(10px);
+        transform: translateY(0.625rem); /* ~10px */
     }
 }
 
-
-/*sections*/
+/* Sections */
 .section-block {
-    width: 100vw; /* full viewport width */
+    width: 100vw;
     margin: 0 auto;
-    border: 2px solid transparent;
-    border-radius: 12px;
+    border: 0.125rem solid transparent; /* ~2px */
+    border-radius: 0.75rem; /* ~12px */
     transition: border-color 0.5s ease, box-shadow 0.5s ease;
 }
 
 .section-block:hover {
-    border-color: rgba(255, 255, 255, 0.34); /* subtle border on hover */
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+    border-color: rgba(255, 255, 255, 0.34);
+    box-shadow: 0 0.25rem 0.75rem rgba(0, 0, 0, 0.05); /* ~4px 12px */
 }
 
 .section-header {
     background-color: transparent;
-    padding: 80px; /* top/bottom and left/right padding */
+    padding: 5rem; /* ~80px */
     font-size: 1.6rem;
     font-weight: bold;
     cursor: pointer;
@@ -490,7 +488,7 @@ body::after {
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    padding: 0 20px;
+    padding: 0 1.25rem; /* ~20px */
     max-height: 0;
     opacity: 0;
     overflow: hidden;
@@ -498,7 +496,7 @@ body::after {
 }
 
 .section-content.open {
-    max-height: 1000px; /* large enough to fit content */
+    max-height: 62.5rem; /* ~1000px */
     opacity: 1;
     overflow: visible;
 }
@@ -508,6 +506,29 @@ body::after {
     opacity: 0;
     overflow: hidden;
 }
+
+/* Mobile Optimization */
+@media screen and (max-width: 600px) {
+    .scroll-arrow {
+        bottom: 1.5rem;
+        font-size: 1.5rem;
+    }
+
+    .section-header {
+        padding: 2.5rem;
+        font-size: 1.25rem;
+        text-align: left;
+    }
+
+    .section-content {
+        padding: 0 1rem;
+    }
+
+    .section-content.open {
+        max-height: 100vh; /* allow full screen expansion */
+    }
+}
+
 
 /*About Me Section*/
 .about-text {
