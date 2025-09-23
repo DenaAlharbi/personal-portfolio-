@@ -545,7 +545,8 @@ body::after {
     width: 55px;
     height: 55px;
     border-radius: 50%;
-    background: #db4437;
+    border-color: #d5b546;
+    background: #d5b546;
     color: white;
     font-size: 32px;
     text-align: center;
@@ -576,11 +577,11 @@ body::after {
 }
 
 .dena-icon.linkedin { background: #0077b5; }
-.dena-icon.github { background: #24292e; }
-.dena-icon.email { background: #d44638; }
+.dena-icon.github { background: #000000; }
+.dena-icon.email { background: #6095da; }
 
 .dena-icon:hover {
-    background: #555;
+    background: #d5b546;
 }
 
 
