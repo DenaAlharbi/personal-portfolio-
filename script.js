@@ -107,6 +107,7 @@ window.addEventListener('click', (e) => {
 
 function toggleIcons() {
     const icons = document.getElementById('floatingIcons');
-    icons.style.display = icons.style.display === 'flex' ? 'none' : 'flex';
+    icons.classList.toggle('show');
 }
+
 

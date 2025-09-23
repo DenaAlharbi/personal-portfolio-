@@ -529,39 +529,48 @@ body::after {
 .honors-list{
     font-size: 140%;
 }
-
-
 .dena-floating-container {
     position: fixed;
     bottom: 30px;
     right: 30px;
     z-index: 9999;
-    display: flex;
-    flex-direction: column-reverse;
-    align-items: center;
 }
 
 .dena-floating-button {
     width: 55px;
     height: 55px;
     border-radius: 50%;
-    border-color: #d5b546;
     background: #d5b546;
     color: white;
-    font-size: 32px;
+    font-size: 28px;
     text-align: center;
     line-height: 55px;
     cursor: pointer;
     box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+    position: relative;
+    z-index: 2;
 }
-
 .dena-floating-icons {
-    display: none;
+    position: absolute;
+    bottom: 70px; /* places icons above the button */
+    left: 50%;
+    transform: translateX(-50%) scale(0);
+    display: flex;
     flex-direction: column;
     gap: 10px;
-    margin-bottom: 10px;
     align-items: center;
+    opacity: 0;
+    transition: opacity 0.3s ease, transform 0.3s ease;
+    pointer-events: none;
+    z-index: 1;
 }
+
+.dena-floating-icons.show {
+    opacity: 1;
+    transform: translateX(-50%) scale(1);
+    pointer-events: auto;
+}
+
 
 .dena-icon {
     width: 40px;
@@ -574,14 +583,19 @@ body::after {
     line-height: 40px;
     text-decoration: none;
     box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
+    animation: bounce-nds 0.3s ease forwards;
 }
 
-.dena-icon.linkedin { background: #0077b5; }
-.dena-icon.github { background: #000000; }
-.dena-icon.email { background: #6095da; }
+.dena-icon.linkedin { background: #0077b5; animation-delay: 0.1s; }
+.dena-icon.github { background: #000000; animation-delay: 0.2s; }
+.dena-icon.email { background: #6095da; animation-delay: 0.3s; }
 
 .dena-icon:hover {
     background: #d5b546;
 }
 
-
+/* Bounce animation */
+@keyframes bounce-nds {
+    0% { opacity: 0; transform: scale(0); }
+    100% { opacity: 1; transform: scale(1); }
+}
