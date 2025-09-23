@@ -244,29 +244,37 @@ body::after {
     font-weight: 400;
     color: #fff;
 }
-
 /* Mobile optimization */
 @media screen and (max-width: 600px) {
     .header {
         padding: 1.5rem;
+        height: auto; /* allow content to expand naturally */
+        align-items: flex-start; /* left-align children */
     }
 
     .hello-world {
-        font-size: 1.25rem;
-        margin-bottom: 1rem;
+        font-size: 1rem;
+        margin-bottom: 0.75rem;
+        text-align: left;
     }
 
     .intro-wrapper {
-        left: 4vw;
-        max-width: 90%;
-        padding-top: 10%;
+        position: relative;
+        top: auto;
+        left: auto;
+        transform: none;
+        max-width: 100%;
+        padding-top: 0;
+        width: 100%;
     }
 
     .intro-text {
-        font-size: 1.75rem;
-        line-height: 1.4;
+        font-size: 1.25rem;
+        line-height: 1.5;
+        text-align: left;
     }
 }
+
 
 .social-icons {
     display: flex;
