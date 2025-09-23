@@ -229,6 +229,7 @@ body::after {
 }
 
 .intro-wrapper {
+    text-align: left;
     position: absolute;
     padding-top: 5%;
     top: 50%;
@@ -239,6 +240,7 @@ body::after {
 }
 
 .intro-text {
+    text-align: left;
     font-size: 2.5rem; /* 40px */
     line-height: 1.6;
     font-weight: 400;
