@@ -616,6 +616,11 @@ body::after {
     z-index: 1;
 }
 
+.floating-icons.show {
+    opacity: 1;
+    transform: translateX(-50%) scale(1);
+    pointer-events: auto;
+}
 .dena-icon {
     width: 40px;
     height: 40px;

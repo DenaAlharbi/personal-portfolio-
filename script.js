@@ -20,7 +20,7 @@ document.querySelectorAll('.section-header').forEach(header => {
 // Scrolls smoothly to a section with the given ID.
 function scrollToSection(id) {
     const section = document.getElementById(id);
-    section.scrollIntoView({ behavior: 'smooth' });
+    section.scrollIntoView({behavior: 'smooth'});
 }
 
 
@@ -60,7 +60,6 @@ backArrow.addEventListener('click', function (e) {
 });
 
 
-
 document.querySelector('.section-header').addEventListener('click', function () {
     const section = this.closest('.section-block');
     const content = section.querySelector('.section-content');
@@ -70,13 +69,9 @@ document.querySelector('.section-header').addEventListener('click', function () 
 
     // Wait for transition to finish, then scroll
     setTimeout(() => {
-        section.scrollIntoView({ behavior: 'smooth', block: 'start' });
+        section.scrollIntoView({behavior: 'smooth', block: 'start'});
     }, 500); // match your CSS transition duration
 });
-
-
-
-
 
 
 const trigger = document.querySelector('.email-trigger');
@@ -116,5 +111,11 @@ document.querySelectorAll('.nav-links a').forEach(link => {
         document.querySelector('.nav-links').classList.remove('show');
     });
 });
+
+function toggleIcons() {
+    const icons = document.querySelector('.floating-icons');
+    icons.classList.toggle('show');
+}
+
 
 
