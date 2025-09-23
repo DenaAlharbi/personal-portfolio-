@@ -104,3 +104,9 @@ window.addEventListener('click', (e) => {
         modal.style.display = 'none';
     }
 });
+
+function toggleIcons() {
+    const icons = document.getElementById('floatingIcons');
+    icons.style.display = icons.style.display === 'flex' ? 'none' : 'flex';
+}
+
