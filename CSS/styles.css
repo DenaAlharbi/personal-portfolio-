@@ -215,8 +215,6 @@ body::after {
     height: 100vh;
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    align-items: center;
     padding: 2.5rem; /* ~40px */
 }
 
@@ -230,6 +228,7 @@ body::after {
 
 .intro-wrapper {
     text-align: left;
+
     position: absolute;
     padding-top: 5%;
     top: 50%;
@@ -241,6 +240,7 @@ body::after {
 
 .intro-text {
     text-align: left;
+
     font-size: 2.5rem; /* 40px */
     line-height: 1.6;
     font-weight: 400;
@@ -250,8 +250,9 @@ body::after {
 @media screen and (max-width: 600px) {
     .header {
         padding: 1.5rem;
-        height: auto; /* allow content to expand naturally */
-        align-items: flex-start; /* left-align children */
+        height: auto;
+        align-items: flex-start !important;
+        text-align: left !important;
     }
 
     .hello-world {
@@ -274,164 +275,10 @@ body::after {
     .intro-text {
         font-size: 1.25rem;
         line-height: 1.5;
-        text-align: left;
-    }
+        text-align: left !important;    }
 }
 
 
-.social-icons {
-    display: flex;
-    gap: 12px;
-    margin-top: 10px;
-}
-
-.social-icons img {
-    width: 40px;
-    height: 40px;
-    object-fit: contain;
-    transition: transform 0.3s ease;
-}
-
-.social-icons img:hover {
-    transform: scale(1.1);
-}
-
-/* === Email Trigger Button === */
-.email-trigger {
-    display: inline-block;
-    background-color: rgba(255, 215, 0, 0.2);
-    border: 1px solid #FFD700;
-    padding: 10px 20px;
-    border-radius: 20px;
-    color: #FFD700;
-    cursor: pointer;
-    transition: background-color 0.3s ease;
-    position: relative;
-    z-index: 10;
-}
-
-.email-trigger:hover {
-    background-color: rgba(255, 215, 0, 0.3);
-}
-
-/* === Dropdown Email Options === */
-.email-options {
-    position: fixed;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    background-color: rgba(255, 215, 0, 0.1);
-    border: 1px solid #FFD700;
-    padding: 20px;
-    border-radius: 12px;
-    display: none;
-    flex-direction: column;
-    gap: 12px;
-    z-index: 1000;
-    animation: fadeSlideDown 0.3s ease forwards;
-    min-width: 250px;
-    text-align: center;
-}
-
-
-.email-options button {
-    background-color: transparent;
-    border: 1px solid #FFD700;
-    color: #FFD700;
-    padding: 8px 16px;
-    border-radius: 6px;
-    cursor: pointer;
-    transition: background-color 0.3s ease;
-    text-align: left;
-}
-
-.email-options button:hover {
-    background-color: rgba(255, 215, 0, 0.2);
-}
-
-/* === Dropdown Animation === */
-@keyframes fadeSlideDown {
-    from {
-        opacity: 0;
-        transform: translateY(-10px);
-    }
-    to {
-        opacity: 1;
-        transform: translateY(0);
-    }
-}
-
-/* === Modal Overlay === */
-.email-modal {
-    display: none;
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-color: rgba(14, 14, 14, 0.6);
-    z-index: 999;
-    justify-content: center;
-    align-items: center;
-}
-
-/* === Modal Content === */
-.email-modal-content {
-    background-color: rgba(255, 215, 0, 0.3);
-    border: 1px solid rgba(255, 215, 0, 0.64);
-    padding: 30px;
-    border-radius: 12px;
-    width: 90%;
-    max-width: 500px;
-    color: white;
-    position: relative;
-}
-
-/* === Close Button === */
-.close-btn {
-    position: absolute;
-    top: 10px;
-    right: 15px;
-    font-size: 24px;
-    color: #FFD700;
-    cursor: pointer;
-}
-
-/* === Form Inputs === */
-.email-modal-content input,
-.email-modal-content textarea {
-    width: 100%;
-    padding: 8px;
-    margin-top: 5px;
-    border: 1px solid #FFD700;
-    background-color: #0e0e0e;
-    color: white;
-    border-radius: 6px;
-}
-
-.email-modal-content button {
-    margin-top: 10px;
-    padding: 10px 20px;
-    background-color: rgb(181, 165, 96);
-    border: none;
-    color: white;
-    cursor: pointer;
-    border-radius: 6px;
-}
-
-/* === Responsive Adjustments === */
-@media (max-width: 600px) {
-    .email-options {
-        left: 50%;
-        transform: translateX(-50%);
-        min-width: 200px;
-    }
-
-    .email-modal-content {
-        width: 95%;
-        padding: 20px;
-    }
-}
 
 
 /* Arrow */
@@ -530,22 +377,22 @@ body::after {
 }
 
 
-/* About Me Section */
+/*About Me Section*/
 .about-text {
     text-align: center;
-    padding: 0 2.5rem 1.25rem; /* ~40px 20px */
-    max-width: 43.75rem; /* 700px */
+    padding: 0 40px 20px;
+    max-width: 700px;
     margin: 0 auto;
     font-size: 1.3rem;
 }
 
-/* Projects */
+/* projects*/
 .projects-container {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    gap: 2.5rem; /* ~40px */
-    padding: 2.5rem;
+    gap: 40px;
+    padding: 40px;
 }
 
 .project-card {
@@ -559,11 +406,11 @@ body::after {
 
 .project-image {
     position: relative;
-    width: 13.75rem; /* 220px */
-    height: 8.75rem; /* 140px */
+    width: 220px;
+    height: 140px;
     border-radius: 50% / 40%;
     overflow: hidden;
-    box-shadow: 0 0.25rem 0.75rem rgba(0, 0, 0, 0.1);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
     transition: transform 0.3s ease;
 }
 
@@ -571,13 +418,13 @@ body::after {
     width: 100%;
     height: 100%;
     object-fit: cover;
-    filter: blur(0.125rem) brightness(0.8);
+    filter: blur(2px) brightness(0.8);
     opacity: 0.8;
     transition: filter 0.3s ease, opacity 0.3s ease;
 }
 
 .project-image:hover img {
-    filter: blur(0.0625rem) brightness(1);
+    filter: blur(1px) brightness(1);
     opacity: 1;
 }
 
@@ -586,106 +433,63 @@ body::after {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    color: #fff;
+    color: rgb(255, 255, 255);
     font-weight: bold;
     font-size: 1rem;
     text-align: center;
-    text-shadow: 0 0.125rem 0.375rem rgba(0, 0, 0, 0);
+    text-shadow: 0 2px 6px rgba(0, 0, 0, 0);
     pointer-events: none;
     background-color: rgba(34, 34, 34, 0);
 }
 
-/* Skills Section */
+
+/*skills section */
 .skills-container {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    gap: 1rem;
-    padding: 2.5rem;
-    max-width: 100%;
-    box-sizing: border-box;
+    gap: 20px;
+    padding: 40px;
 }
 
 .skill {
     background-color: rgba(213, 181, 70, 0.51);
-    padding: 0.75rem 1.25rem;
-    border-radius: 1.25rem;
-    box-shadow: 0 0.25rem 0.5rem rgba(0, 0, 0, 0);
+    padding: 15px 25px;
+    border-radius: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0);
     font-weight: bold;
     transition: transform 0.3s ease;
-    word-break: break-word;
-    max-width: 100%;
-    text-align: center;
 }
 
 .skill:hover {
     transform: scale(1.1);
 }
 
-/* Honors Section */
-.honors-container {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 1.25rem;
-    padding: 2.5rem;
-}
-
-.honors-list {
-    font-size: 1.4rem;
-}
-
-/* Mobile Optimization */
-@media screen and (max-width: 768px) {
+@media (max-width: 768px) {
     .header {
         flex-direction: column;
         text-align: center;
     }
 
-    .projects-container,
-    .skills-container,
-    .honors-container {
+    .projects-container {
         flex-direction: column;
         align-items: center;
-        padding: 1.5rem;
-        gap: 1rem;
     }
 
-    .project-image {
-        width: 80vw;
-        height: auto;
-        border-radius: 1rem;
-    }
-
-    .project-title {
-        font-size: 0.875rem;
-    }
-
-    .about-text {
-        padding: 0 1.5rem 1rem;
-        font-size: 1.1rem;
-        text-align: left;
-    }
     .skills-container {
-        flex-direction: row;
-        flex-wrap: wrap;
-        justify-content: center;
-        padding: 1.5rem;
-        gap: 0.75rem;
+        flex-direction: column;
+        align-items: center;
     }
-
-    .skill {
-        font-size: 0.875rem;
-        padding: 0.5rem 1rem;
-        flex: 1 1 40%;
-        max-width: 45vw;
-        box-sizing: border-box;
-    }
-
-    .honors-list {
-        font-size: 1.2rem;
-        text-align: center;
-    }
+}
+.honors-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    padding: 40px;
+}
+.honors-list{
+    font-size: 140%;
 }
 .floating-container {
      position: fixed;
