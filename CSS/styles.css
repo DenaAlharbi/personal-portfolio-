@@ -164,6 +164,7 @@ body::after {
     color: #ccc;
     cursor: pointer;
     margin-left: auto;
+    margin-right: 5%;
     z-index: 2;
 }
 
@@ -282,6 +283,7 @@ body::after {
 .email-modal {
     display: none;
     position: fixed;
+    inset: 0;
     z-index: 999;
     top: 0;
     left: 0;
@@ -328,6 +330,11 @@ body::after {
     font-family: 'Segoe UI', sans-serif;
     margin: 1rem;
     font-size: 1rem;
+}
+.email-trigger {
+    opacity: 0;
+    animation: fadeIn 1.5s ease-out forwards;
+    animation-delay: 0.1s;
 }
 
 form label {
