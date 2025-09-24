@@ -2,7 +2,7 @@
 
 ### Project: Personal Portfolio Website
 **Author:** Dena Alharbi  
-**Date:** September 2025
+**Date:** 24 September 2025
 
 ---
 
@@ -12,15 +12,20 @@
 assignment-1/
 ├── README.md
 ├── index.html
+├── script.js
 ├── css/
 │   └── styles.css
-├── js/
-│   └── script.js
+│   └── projectstyle.css
 ├── assets/
 │   └── images/
+│   └── Projects Attachments
 ├── docs/
 │   ├── ai-usage-report.md
 │   └── technical-documentation.md
+├── HTML/
+│   ├── project1.html
+│   ├── project2.html
+│   └── project3.html
 └── .gitignore
 
 ```
