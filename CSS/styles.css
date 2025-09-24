@@ -64,7 +64,7 @@ body::after {
         top: -9vh;
         transform: scale(0.6) translateY(-10%);
         opacity: 0.15;
-        right: -30vw;
+        right: -40vw;
     }
 }
 
@@ -229,9 +229,9 @@ body::after {
 .intro-wrapper {
     text-align: left;
     position: absolute;
-    padding-top: 5%;
-    margin-top: 6rem;
-    top: 50%;
+    padding-top: 3%;
+    margin-top: 3rem;
+    top: 40%;
     left: 5vw;
     transform: translateY(-50%);
     max-width: 37.5rem; /* 600px */
@@ -251,7 +251,7 @@ body::after {
 @media screen and (max-width: 600px) {
     .header {
         padding: 1.5rem;
-        height: auto;
+        height: calc(var(--vh, 1vh) * 100);
         align-items: flex-start;
         text-align: left ;
     }
@@ -265,7 +265,7 @@ body::after {
     .intro-wrapper {
         text-align: left;
         position: relative;
-        top: auto;
+        top: 30%;
         left: auto;
         transform: none;
         max-width: 100%;
