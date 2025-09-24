@@ -74,33 +74,6 @@ document.querySelector('.section-header').addEventListener('click', function () 
 });
 
 
-const trigger = document.querySelector('.email-trigger');
-const dropdown = document.querySelector('.email-options');
-const formLink = document.getElementById('formLink');
-const modal = document.getElementById('emailModal');
-const closeModal = document.getElementById('closeModal');
-
-trigger.addEventListener('click', () => {
-    dropdown.style.display = dropdown.style.display === 'block' ? 'none' : 'block';
-});
-
-formLink.addEventListener('click', (e) => {
-    e.preventDefault();
-    modal.style.display = 'flex';
-    dropdown.style.display = 'none';
-});
-
-closeModal.addEventListener('click', () => {
-    modal.style.display = 'none';
-});
-
-window.addEventListener('click', (e) => {
-    if (e.target === modal) {
-        modal.style.display = 'none';
-    }
-});
-
-
 function toggleMenu() {
     document.querySelector('.nav-links').classList.toggle('show');
 }
@@ -118,7 +91,6 @@ function toggleIcons() {
 }
 
 
-
 // Get the actual viewport height and set it as a CSS variable
 let vh = window.innerHeight * 0.01;
 document.documentElement.style.setProperty('--vh', `${vh}px`);
@@ -126,6 +98,3 @@ window.addEventListener('resize', () => {
     let vh = window.innerHeight * 0.01;
     document.documentElement.style.setProperty('--vh', `${vh}px`);
 });
-
-
-
