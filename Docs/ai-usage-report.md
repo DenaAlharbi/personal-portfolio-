@@ -85,11 +85,42 @@ For example:
 
 - Here I was trying to figure out the javascript of making sections open and i have no experience in this so i asked for the structure and tweaked it to fit my class names and purpose. AI made the process easier and faster but mistakes were still found!
 
-## 🧠 Reflection
 
-Using AI helped me move faster, especially when debugging layout quirks or exploring design ideas. I always reviewed,
-customized, and refined the suggestions to match my personal style and goals. The final portfolio reflects my own
-decisions, creativity, and technical skill—with AI as a supportive tool, not a substitute.
+## 🤖 Reflections on Using AI in My Portfolio Journey
+
+As a student building my first personal website, integrating AI into my workflow was both empowering and eye-opening. Here’s a breakdown of how it helped—and where it challenged me.
+
+### ✅ Benefits
+
+- **Faster Learning Curve**  
+  AI helped me grasp new concepts quickly by breaking down CSS, layout logic, and animation techniques in ways that made sense—even when I had no prior experience.
+
+- **Debugging Support**  
+  Whenever I hit layout issues or responsiveness bugs, AI was like a second pair of eyes. It helped me troubleshoot faster and gave me confidence to experiment.
+
+- **Creative Inspiration**  
+  From branding ideas to UI enhancements, AI offered suggestions that sparked my creativity and pushed me to refine my design choices.
+
+- **Documentation Drafting**  
+  Structuring my README and technical docs was easier with AI-generated templates that I could personalize to match my tone and style.
+
+### ⚠️ Challenges
+
+- **Misunderstood Intentions**  
+  Sometimes, the AI didn’t fully grasp what I was trying to achieve visually or structurally, which led to suggestions that didn’t quite fit.
+
+- **Occasional Inaccuracies**  
+  A few answers were misleading or outdated, especially when dealing with browser quirks or advanced CSS behavior. I had to double-check and test everything manually.
+
+- **Limited Context Awareness**  
+  Without seeing my full code or design vision, the AI occasionally gave generic advice that needed heavy tweaking to work in my specific layout.
+
+---
+
+### 💡 Final Thoughts
+
+Using AI didn’t replace learning—it accelerated it. It gave me a foundation to build on, but I still had to make the final decisions, test my code, and refine the design. The process taught me to think critically, ask better questions, and trust my own instincts as a developer.
+
 
 ## 🚀 Future Use of AI
 
