@@ -5,13 +5,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>DenaAlharbi-Portfolio</title>
     <link rel="stylesheet" href="CSS/styles.css">
-
     <script src="script.js" defer></script>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500&display=swap" rel="stylesheet">
 </head>
 
 <header class="header">
     <div class="intro-wrapper">
+        <!-- A brief intro -->
         <div class="intro-section">
             <div class="intro-section">
                 <p class="hello-world">– Hello World</p>
@@ -22,9 +22,8 @@
                 </p>
             </div>
         </div>
-
+        <!-- The suggestions button using an email-like form-->
         <div class="email-trigger">Suggestions?</div>
-
         <div class="email-modal" id="emailModal">
             <div class="email-modal-content">
                 <span class="close-btn">&times;</span>
@@ -40,7 +39,7 @@
 
                     <button type="submit">Submit</button>
                 </form>
-                <script>
+                <script> //Do not move this to script.js
                     const trigger = document.querySelector('.email-trigger');
                     const modal = document.getElementById('emailModal');
                     const closeBtn = document.querySelector('.close-btn');
@@ -79,8 +78,6 @@
     <nav class="navbar">
         <div class="logo">
             <img src="assets/images/image-removebg-preview%20(9).png" alt="Dena Logo" class="logo"/></div>
-
-
         <button class="menu-toggle" onclick="toggleMenu()">☰</button>
         <div class="nav-links" id="navLinks">
             <a href="#about-section">About Me</a>
@@ -88,8 +85,6 @@
             <a href="#skills-section">Skills</a>
             <a href="#honors-section">Honors & Awards</a>
         </div>
-        <!--        <button class="menu-toggle" onclick="toggleMenu()">☰</button>-->
-
     </nav>
 </div>
 <body>
@@ -168,6 +163,7 @@
             </div>
         </div>
     </section>
+    <!-- Honors and Awards Section -->
     <section class="section-block" id="honors-section">
         <div class="section-header">HONORS AND AWARDS</div>
         <div class="section-content">
@@ -181,6 +177,7 @@
         </div>
     </section>
 </main>
+<!--floating container for the contacts button-->
 <div class="floating-container">
     <div class="floating-icons">
         <a href="https://www.linkedin.com/in/dena-alharbi/" target="_blank" class="dena-icon linkedin">in</a>

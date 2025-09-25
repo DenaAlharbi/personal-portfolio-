@@ -1,4 +1,4 @@
-/* General Reset */
+/* General  */
 * {
     margin: 0;
     padding: 0;
@@ -74,7 +74,7 @@ body::after {
     top: 0;
     left: 0;
     width: 100%;
-    height: 3.5rem; /* ~55px */
+    height: 3.5rem;
     z-index: 1000;
 }
 
@@ -100,7 +100,7 @@ body::after {
 
 .nav-container {
     width: 100%;
-    max-width: 62.5rem; /* 1000px */
+    max-width: 62.5rem;
     display: flex;
     align-items: center;
 }
@@ -115,7 +115,7 @@ body::after {
     text-align: center;
     text-decoration: none;
     color: #ccc;
-    font-size: 0.9375rem; /* 15px */
+    font-size: 0.9375rem;
     font-weight: 500;
     text-transform: uppercase;
     line-height: 3.5rem;
@@ -137,7 +137,7 @@ body::after {
 
 /* Logo image */
 .logo img {
-    height: 4.375rem; /* 70px */
+    height: 4.375rem;
     width: auto;
     object-fit: contain;
     padding-left: 10%;
@@ -155,7 +155,7 @@ body::after {
     }
 }
 
-/* Hamburger menu toggle */
+/* Hamburger menu toggle - only for small screen*/
 .menu-toggle {
     display: none;
     font-size: 1.5rem;
@@ -206,8 +206,7 @@ body::after {
         padding-left: 5%;
     }
 }
-
-
+/*css for intro section*/
 .intro-section {
     animation: fadeIn 1.5s ease-out;
 }
@@ -253,7 +252,7 @@ body::after {
 @media screen and (max-width: 600px) {
     .header {
         padding: 1.5rem;
-        height: calc(var(--vh, 1vh) * 100);
+        height: calc(var(--vh, 1vh) * 100);/* this raises an error but it works and its essential - will fix later*/
         align-items: flex-start;
         text-align: left;
     }
@@ -278,10 +277,11 @@ body::after {
     .intro-text {
         font-size: 1.25rem;
         line-height: 1.5;
-        text-align: left !important;
+        text-align: left !important; /*important is to override anything from before*/
     }
 }
 
+/*This section is for suggestion button using an email-like format*/
 .email-modal {
     display: none;
     position: fixed;
@@ -443,7 +443,7 @@ form button[type="submit"] {
     }
 }
 
-/* Sections */
+/* General css for Sections */
 .section-block {
     width: 100vw;
     margin: 0 auto;
@@ -630,7 +630,7 @@ form button[type="submit"] {
 
 
 }
-
+/* honors and awards section*/
 .honors-container {
     display: flex;
     flex-wrap: wrap;
@@ -642,7 +642,7 @@ form button[type="submit"] {
 .honors-list {
     font-size: 140%;
 }
-
+/*floating contact button css*/
 .floating-container {
     position: fixed;
     bottom: 30px;
