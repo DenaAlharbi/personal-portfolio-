@@ -248,13 +248,14 @@ body::after {
     font-weight: 400;
     color: #fff;
 }
+
 /* Mobile optimization */
 @media screen and (max-width: 600px) {
     .header {
         padding: 1.5rem;
         height: calc(var(--vh, 1vh) * 100);
         align-items: flex-start;
-        text-align: left ;
+        text-align: left;
     }
 
     .hello-world {
@@ -277,7 +278,8 @@ body::after {
     .intro-text {
         font-size: 1.25rem;
         line-height: 1.5;
-        text-align: left !important;    }
+        text-align: left !important;
+    }
 }
 
 .email-modal {
@@ -331,6 +333,7 @@ body::after {
     margin: 1rem;
     font-size: 1rem;
 }
+
 .email-trigger {
     opacity: 0;
     animation: fadeIn 1.5s ease-out forwards;
@@ -375,6 +378,7 @@ form button[type="submit"] {
     width: 100%;
     box-sizing: border-box;
 }
+
 @media (max-width: 480px) {
     .email-modal-content {
         max-width: 90vw;
@@ -408,6 +412,7 @@ form button[type="submit"] {
     form label {
         font-size: 0.85rem;
     }
+
     .email-modal-content {
         max-width: 90vw;
         padding: 1.5rem;
@@ -415,7 +420,6 @@ form button[type="submit"] {
     }
 
 }
-
 
 
 /* Arrow */
@@ -610,20 +614,23 @@ form button[type="submit"] {
 
     .projects-container {
         flex-direction: column;
-        align-items: center; !important;
+        align-items: center;
+    !important;
     }
 
     .skills-container {
         flex-direction: column;
-        align-items: center; !important;
+        align-items: center;
+    !important;
     }
+
     .skill {
         padding: 0.2rem !important;
     }
 
 
-
 }
+
 .honors-container {
     display: flex;
     flex-wrap: wrap;
@@ -631,15 +638,17 @@ form button[type="submit"] {
     gap: 20px;
     padding: 40px;
 }
-.honors-list{
+
+.honors-list {
     font-size: 140%;
 }
+
 .floating-container {
-     position: fixed;
-     bottom: 30px;
-     right: 30px;
-     z-index: 9999;
- }
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    z-index: 9999;
+}
 
 .dena-floating-button {
     width: 55px;
@@ -657,7 +666,6 @@ form button[type="submit"] {
     align-items: center;
 
 }
-
 
 
 .floating-icons {
@@ -680,6 +688,7 @@ form button[type="submit"] {
     transform: translateX(-50%) scale(1);
     pointer-events: auto;
 }
+
 .dena-icon {
     width: 40px;
     height: 40px;
@@ -694,14 +703,26 @@ form button[type="submit"] {
     animation: bounce-nds 0.3s ease forwards;
 }
 
-.dena-icon.linkedin { background: #0077b5; animation-delay: 0.1s; }
-.dena-icon.github { background: #000000; animation-delay: 0.2s; }
-.dena-icon.email { background: #6095da; animation-delay: 0.3s; }
+.dena-icon.linkedin {
+    background: #0077b5;
+    animation-delay: 0.1s;
+}
+
+.dena-icon.github {
+    background: #000000;
+    animation-delay: 0.2s;
+}
+
+.dena-icon.email {
+    background: #6095da;
+    animation-delay: 0.3s;
+}
 
 .dena-icon:hover {
     background: #d5b546;
 
 }
+
 .plus-icon {
     position: relative;
     top: 10%;
@@ -712,8 +733,14 @@ form button[type="submit"] {
 
 /* Bounce animation */
 @keyframes bounce-nds {
-    0% { opacity: 0; transform: scale(0); }
-    100% { opacity: 1; transform: scale(1); }
+    0% {
+        opacity: 0;
+        transform: scale(0);
+    }
+    100% {
+        opacity: 1;
+        transform: scale(1);
+    }
 }
 
 
