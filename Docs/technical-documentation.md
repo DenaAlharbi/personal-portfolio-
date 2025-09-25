@@ -42,12 +42,13 @@ personal-portfolio-/
 - Fixed top navigation bar with anchor links to each section
 - Smooth scroll behavior using `scrollIntoView`
 - Responsive layout using Flexbox<br>
-<img src="./Docs-images/navbar-mobile-clicked.png" alt="Desktop Navbar" width="300" />
+- For desktop: when hovered on, the edges appear in gold<br>
   <img src="./Docs-images/navbar-desktop.png" alt="Desktop Navbar" width="300" />
-<img src="./Docs-images/navbar-mobile.png" alt="Mobile Navbar" width="300" />
-
-- when hovered on, the edges appear in gold<br>
   <img src="./Docs-images/navbar-desktop-hovered.png" alt="Desktop Navbar" width="300" />
+- For mobiles:
+<img src="./Docs-images/navbar-mobile.png" alt="Mobile Navbar" width="300" />
+<img src="./Docs-images/navbar-mobile-clicked.png" alt="Desktop Navbar" width="300" />
+
 
 
 ### Contact Button

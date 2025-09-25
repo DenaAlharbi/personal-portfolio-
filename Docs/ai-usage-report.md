@@ -19,7 +19,7 @@ maintaining full ownership of the final product.
 
 - **Microsoft Copilot** – for layout debugging, design suggestions, and creative brainstorming
 - **ChatGPT** – for occasional syntax checks and UI inspiration
--**A website** - for reusable components was used [https://codepen.io/simoberny/pen/pJZJQY](https://codepen.io/simoberny/pen/pJZJQY)
+- **A website** - for reusable components was used [https://codepen.io/simoberny/pen/pJZJQY](https://codepen.io/simoberny/pen/pJZJQY)
 ---
 
 ## 📌 Areas Where AI Was Used
@@ -50,14 +50,23 @@ maintaining full ownership of the final product.
 
 ---
 
-## 🔍 AI Contribution vs. Human Work example
+## 🔍 AI Contribution vs. Human Work examples
 
-| Task                     | AI Role                   | My Role                      |
-|--------------------------|---------------------------|------------------------------|
-| Timeline scroll fix      | Suggested layout strategy | Implemented and styled       |
-| Section transitions      | Provided CSS logic        | Tuned timing and aesthetics  |
-| README.md creation       | Drafted structure         | Customized tone and content  |
-| Portfolio branding ideas | Offered inspiration       | Selected and refined visuals |
+| Task                        | AI Role                          | My Role                             |
+|-----------------------------|----------------------------------|-------------------------------------|
+| Section transitions         | Provided CSS logic               | Tuned timing and aesthetics         |
+| Docs creation               | Drafted structure                | Customized tone and content         |
+| Portfolio branding ideas    | Offered inspiration              | Selected and refined visuals        |
+| Navbar design               | Suggested layout and hover logic | Adjusted spacing and typography     |
+| README styling              | Proposed Markdown layout         | Added branding, links, and visuals  |
+| Responsive layout fixes     | Diagnosed flex/grid issues       | Tweaked breakpoints and padding     |
+| Color palette ideas         | Generated modern combinations    | Chose final scheme to match vibe    |
+| Social media sidebar        | Gave vertical layout logic       | Positioned and styled icons         |
+| Texture layering            | Explained CSS techniques         | Selected final pattern and opacity  |
+| Typography pairing          | Suggested font combos            | Picked weights and applied hierarchy|
+| Project card hover effects  | Wrote transition logic           | Tuned animation speed and depth     |
+| Section spacing             | Proposed margin/padding rules    | Balanced visual rhythm manually     |
+
 
 ---
 
