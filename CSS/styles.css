@@ -206,6 +206,7 @@ body::after {
         padding-left: 5%;
     }
 }
+
 /*css for intro section*/
 .intro-section {
     animation: fadeIn 1.5s ease-out;
@@ -252,7 +253,7 @@ body::after {
 @media screen and (max-width: 600px) {
     .header {
         padding: 1.5rem;
-        height: calc(var(--vh, 1vh) * 100);/* this raises an error but it works and its essential - will fix later*/
+        height: calc(var(--vh, 1vh) * 100); /* this raises an error but it works and its essential - will fix later*/
         align-items: flex-start;
         text-align: left;
     }
@@ -630,6 +631,7 @@ form button[type="submit"] {
 
 
 }
+
 /* honors and awards section*/
 .honors-container {
     display: flex;
@@ -642,6 +644,7 @@ form button[type="submit"] {
 .honors-list {
     font-size: 140%;
 }
+
 /*floating contact button css*/
 .floating-container {
     position: fixed;

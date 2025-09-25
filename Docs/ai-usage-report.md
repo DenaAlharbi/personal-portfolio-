@@ -19,14 +19,14 @@ maintaining full ownership of the final product.
 
 - **Microsoft Copilot** – for layout debugging, design suggestions, and creative brainstorming
 - **ChatGPT** – for occasional syntax checks and UI inspiration
-
+-**A website** - for reusable components was used [https://codepen.io/simoberny/pen/pJZJQY](https://codepen.io/simoberny/pen/pJZJQY)
 ---
 
 ## 📌 Areas Where AI Was Used
 
 ### 1. Layout Troubleshooting
 
-- Debugged errors 
+- Debugged errors
 - Refined modal and dropdown behavior for the contact section
 
 ### 2. Responsive Design
@@ -38,10 +38,10 @@ maintaining full ownership of the final product.
 ### 3. Creative Enhancements
 
 - Brainstormed animation ideas for section reveals
-- Helped with refining and enhancing my css code 
+- Helped with refining and enhancing my css code
 - Added comments to the code to make the project maintainable
 - Proposed typography pairings and gradient overlays
-- Offered README structure and branding language
+- Offered README and docs structure and branding language
 
 ### 4. Code Optimization
 
@@ -60,12 +60,21 @@ maintaining full ownership of the final product.
 | Portfolio branding ideas | Offered inspiration       | Selected and refined visuals |
 
 ---
+
 ## Chat Snippets Examples
+
 <img src="./Docs-images/snip4.png" alt="Form Design" width="300" />
 <img src="./Docs-images/snip3.png" alt="Form Design" width="300" />
 <img src="./Docs-images/snip2.png" alt="Form Design" width="300" />
 <img src="./Docs-images/snip1.png" alt="Form Design" width="300" /><br>
->  🧾 Ethical Note :<br> All AI-generated suggestions were reviewed and edited by me to ensure originality, accuracy, and alignment with my personal style and goals. I maintained full creative and technical control throughout the project.
+>  🧾 Ethical Note :<br> All AI-generated suggestions were reviewed and edited by me to ensure originality, accuracy, and alignment with my personal style and goals. I maintained full creative and technical control throughout the project.<br>
+
+For example:
+  <img src="./Docs-images/snip5.png" alt="Form Design" width="300" /><br>
+- In this example I made the copilot convert the units to responsive just to amek the process faster and then i tested it and every time there would be something to change. So because i understand my code i would tweak the numbers until it looks perfect.<br><br>
+  <img src="./Docs-images/snip6.png" alt="Form Design" width="300" /><br>
+
+- Here I was trying to figure out the javascript of making sections open and i have no experience in this so i asked for the structure and tweaked it to fit my class names and purpose. AI made the process easier and faster but mistakes were still found!
 
 ## 🧠 Reflection
 
@@ -75,6 +84,9 @@ decisions, creativity, and technical skill—with AI as a supportive tool, not a
 
 ## 🚀 Future Use of AI
 
-In future projects, I plan to continue using AI tools to accelerate development and enhance quality. This includes leveraging AI for accessibility audits, performance optimization, semantic HTML structuring, and creative ideation. I also aim to explore AI-assisted testing and documentation generation to streamline workflows while maintaining full authorship and oversight.
+In future projects, I plan to continue using AI tools to accelerate development and enhance quality. This includes
+leveraging AI for accessibility audits, performance optimization, semantic HTML structuring, and creative ideation. I
+also aim to explore AI-assisted testing and documentation generation to streamline workflows while maintaining full
+authorship and oversight.
 
 ---

@@ -20,6 +20,7 @@ site showcases my journey, skills, and the projects I’ve crafted with care and
 - **Frontend**: HTML5, CSS3, JavaScript
 - **Design**: Figma, minimalist branding, responsive layouts
 - **Workflow**: Modular code structure, iterative design, browser compatibility fixes
+- **Ai-usage**: [AI Usage Report](Docs/ai-usage-report.md)
 
 ---
 
@@ -51,4 +52,5 @@ If you're here to explore the code:
 
 ---
 
-
+## Live Deployment Link
+[The google drive link](https://drive.google.com/drive/folders/1KEUI212Ttg7DnnJWdLw0AUwMe_UGRUCC?usp=drive_link)

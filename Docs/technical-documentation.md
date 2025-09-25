@@ -240,3 +240,68 @@ features without disrupting existing functionality.*
 - Add my volunteering experiences using a timeline diagram
 - Make the Honors and Award section include the certificates
 - Add all my projects
+
+---
+# Assignment 1 Checklist
+
+## 1. Repository Setup
+
+- [✅] Maintain a clear folder structure:
+- [✅] Ensure a meaningful commit history.<br>
+> I have over 60 commits that I tried to make as meaningful as possible and here are some<br>
+<img src="./Docs-images/commits1.png" alt="Modal Preview" width="300" />
+<img src="./Docs-images/commit2.png" alt="Modal Preview" width="300" />
+
+## 2. Content Requirements
+- [✅ ] **About Me** section:
+    - [✅ ] 2-3 sentence intro. -> About me section 
+    - [✅ ] Tagline/one-liner. -> In the first view of the website 
+    - [✅ ] Optional profile image.-> I made a logo specifically as a brand
+- [✅ ] **Projects** section:
+    - [✅ ] At least 2 projects with: -> I did three (when clicked u can see the details) and will add the rest later
+        - [ ✅] Title.
+        - [ ✅] Short description.
+        - [ ✅] Placeholder image.
+- [ ✅] **Contact** section: ->I did the contact section as links 
+    - [ ✅] Form with fields for: -> I made the form requisite as a suggestions button
+        - [ ✅] Name.
+        - [✅ ] Email.
+        - [✅ ] Message.
+- [ ✅] Consider adding extra sections (skills, hobbies, achievements). -> added skills and Honors and Awards Section
+
+## 3. Responsive Design
+- [✅] Ensure the site displays well on:
+    - [ ✅] Desktop.
+    - [ ✅] Tablet.
+    - [✅ ] Mobile.
+- [✅ ] Use CSS Grid/Flexbox or a lightweight framework (e.g., Bootstrap, Tailwind). used flexbox and responsive units 
+- [✅ ] Test responsiveness using browser resizing or DevTools. 
+
+## 4. Interactivity
+- [✅] Add at least one JavaScript feature:
+    - [✅ ] Smooth scrolling.
+    - [ ] Dark/light theme toggle.
+    - [ ] Greeting message by time of day.
+    - [ ✅] Form or button interactions.
+
+## 5. AI Integration
+- [ ✅] Use at least one AI tool (e.g., GitHub Copilot, ChatGPT).
+- [ ✅] Document AI usage in `docs/ai-usage-report.md`:
+    - [ ✅] Tools used & use cases.
+    - [✅ ] Benefits & challenges.
+    - [✅ ] Learning outcomes.
+    - [✅ ] Modifications made to AI suggestions.
+
+## 6. Code Quality
+- [✅] Ensure clean, consistent, well-indented code.
+- [ ✅] Add comments for clarity.
+- [✅] Remove unused code and broken links.
+
+## 7. Documentation
+- [✅] Update `README.md` to include:
+    - [✅ ] Project description.
+    - [✅ ] Setup instructions.
+    - [ ✅] Summary of AI use (link to `ai-usage-report.md`).
+    - [✅ ] Optional live deployment link.-> Did it just for mobile 
+
+
