@@ -426,7 +426,7 @@ form button[type="submit"] {
 /* Arrow */
 .scroll-arrow {
     position: absolute;
-    bottom: 2rem; /* ~32px */
+    bottom: 2rem;
     left: 50%;
     transform: translateX(-50%);
     font-size: 2rem;
@@ -440,7 +440,7 @@ form button[type="submit"] {
         transform: translateY(0);
     }
     50% {
-        transform: translateY(0.625rem); /* ~10px */
+        transform: translateY(0.625rem);
     }
 }
 
@@ -448,19 +448,19 @@ form button[type="submit"] {
 .section-block {
     width: 100vw;
     margin: 0 auto;
-    border: 0.125rem solid transparent; /* ~2px */
-    border-radius: 0.75rem; /* ~12px */
+    border: 0.125rem solid transparent;
+    border-radius: 0.75rem;
     transition: border-color 0.5s ease, box-shadow 0.5s ease;
 }
 
 .section-block:hover {
     border-color: rgba(255, 255, 255, 0.34);
-    box-shadow: 0 0.25rem 0.75rem rgba(0, 0, 0, 0.05); /* ~4px 12px */
+    box-shadow: 0 0.25rem 0.75rem rgba(0, 0, 0, 0.05);
 }
 
 .section-header {
     background-color: transparent;
-    padding: 5rem; /* ~80px */
+    padding: 5rem;
     font-size: 1.6rem;
     font-weight: bold;
     cursor: pointer;
@@ -477,7 +477,7 @@ form button[type="submit"] {
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    padding: 0 1.25rem; /* ~20px */
+    padding: 0 1.25rem;
     max-height: 0;
     opacity: 0;
     overflow: hidden;
@@ -485,7 +485,7 @@ form button[type="submit"] {
 }
 
 .section-content.open {
-    max-height: 62.5rem; /* ~1000px */
+    max-height: 62.5rem;
     opacity: 1;
     overflow: visible;
 }

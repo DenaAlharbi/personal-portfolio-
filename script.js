@@ -70,7 +70,7 @@ document.querySelector('.section-header').addEventListener('click', function () 
     // Wait for transition to finish, then scroll
     setTimeout(() => {
         section.scrollIntoView({behavior: 'smooth', block: 'start'});
-    }, 500); // match your CSS transition duration
+    }, 500); // match my CSS transition duration
 });
 
 
@@ -84,7 +84,7 @@ document.querySelectorAll('.nav-links a').forEach(link => {
         document.querySelector('.nav-links').classList.remove('show');
     });
 });
-
+//floating button function
 function toggleIcons() {
     const icons = document.querySelector('.floating-icons');
     icons.classList.toggle('show');
