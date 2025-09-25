@@ -2,7 +2,7 @@
 
 ### Project: Personal Portfolio Website
 **Author:** Dena Alharbi  
-**Date:** September 2025
+**Date:** 25 September 2025
 
 ---
 
@@ -15,8 +15,7 @@ This report outlines how AI tools were used to support the design, development, 
 ## 🛠️ Tools Used
 
 - **Microsoft Copilot** – for layout debugging, design suggestions, and creative brainstorming
-- **GitHub Copilot** – for inline code completions and syntax support
-- **ChatGPT / Bing Chat** – for occasional syntax checks and UI inspiration
+- **ChatGPT** – for occasional syntax checks and UI inspiration
 
 ---
 
@@ -25,7 +24,6 @@ This report outlines how AI tools were used to support the design, development, 
 ### 1. Layout Troubleshooting
 - Debugged horizontal scroll issues in the timeline section
 - Refined modal and dropdown behavior for the contact section
-- Fixed SCSS compilation setup in WebStorm
 
 ### 2. Responsive Design
 - Suggested flexbox strategies for centering `.intro-wrapper`

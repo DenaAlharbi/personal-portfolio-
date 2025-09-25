@@ -49,7 +49,7 @@ body::after {
     opacity: 0.2;
 }
 
-/* Optional: fine-tune for very small screens */
+/*fine-tune for very small screens */
 @media screen and (max-width: 500px) {
     body {
         font-size: 0.95rem;
