@@ -61,10 +61,10 @@ maintaining full ownership of the final product.
 
 ---
 ## Chat Snippets Examples
-![Preview](./Docs-images/snip4.png)
-![Preview](./Docs-images/snip3.png)
-![Preview](./Docs-images/snip2.png)
-![Preview](./Docs-images/snip1.png)
+<img src="./Docs-images/snip4.png" alt="Form Design" width="300" />
+<img src="./Docs-images/snip3.png" alt="Form Design" width="300" />
+<img src="./Docs-images/snip2.png" alt="Form Design" width="300" />
+<img src="./Docs-images/snip1.png" alt="Form Design" width="300" />
 >### 🧾 Ethical Note :
 >All AI-generated suggestions were reviewed and edited by me to ensure originality, accuracy, and alignment with my personal style and goals. I maintained full creative and technical control throughout the project.
 
