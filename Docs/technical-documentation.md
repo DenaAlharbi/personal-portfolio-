@@ -1,18 +1,3 @@
-<img src="./Docs-images/logo.png" alt="Personal Logo" width="100" />
-<img src="./Docs-images/res-desktop.png" alt="Responsive Desktop Layout" width="300" />
-<img src="./Docs-images/res-mobile.png" alt="Responsive Mobile Layout" width="200" height="100"/>
-<img src="./Docs-images/skils.png" alt="Skills Section" width="300"  />
-<img src="./Docs-images/contact-button.png" alt="Button UI" width="400" />
-<img src="./Docs-images/contact-clicked.png" alt="Button UI" width="300" />
-<img src="./Docs-images/form-opened.png" alt="Form Design" width="300" />
-<img src="./Docs-images/navbar-desktop.png" alt="Desktop Navbar" width="300" />
-<img src="./Docs-images/navbar-desktop-hovered.png" alt="Desktop Navbar" width="300" />
-<img src="./Docs-images/navbar-mobile.png" alt="Mobile Navbar" width="300" />
-<img src="./Docs-images/suggestions-button.png" alt="Modal Preview" width="300" />
-<img src="./Docs-images/Sections-open.png" alt="Section Layout" width="300" />
-<img src="./Docs-images/project-details.png" alt="Social Icons" width="300" />
-<img src="./Docs-images/project-section.png" alt="Animation Preview" width="300" />
-
 
 # 📚 Technical Documentation
 
@@ -57,40 +42,42 @@ personal-portfolio-/
 - Fixed top navigation bar with anchor links to each section
 - Smooth scroll behavior using `scrollIntoView`
 - Responsive layout using Flexbox<br>
-  ![Preview](./Docs-images/navbar-desktop.png)<br><br>
-  ![Preview](./Docs-images/navbar-mobile.png)<br>
-  ![Preview](./Docs-images/navbar-mobile-clicked.png)
+<img src="./Docs-images/navbar-mobile-clicked.png" alt="Desktop Navbar" width="300" />
+  <img src="./Docs-images/navbar-desktop.png" alt="Desktop Navbar" width="300" />
+<img src="./Docs-images/navbar-mobile.png" alt="Mobile Navbar" width="300" />
 
 - when hovered on, the edges appear in gold<br>
-  ![Preview](./Docs-images/navbar-desktop-hovered.png)
+  <img src="./Docs-images/navbar-desktop-hovered.png" alt="Desktop Navbar" width="300" />
+
 
 ### Contact Button
 
 -On the right-bottom of the screen at all times weather its a desktop or mobile screen there is a button that when
 hovered on you can click on anny of the icons taht take you to my linkedin, Github, or Email me using the devices
 default app<br>
-![Preview](./Docs-images/contact-button.png)
-![Preview](./Docs-images/contact-clicked.png)
+<img src="./Docs-images/contact-button.png" alt="Button UI" width="300" />
+<img src="./Docs-images/contact-clicked.png" alt="Button UI" width="300" />
 
 ### Suggestions Button
 
 -Under the intro there is a button that when hovered on a form for suggesting ideas for me appears on both desktop and
 smaller screens in the middle<br>
-![Preview](./Docs-images/suggestions-button.png)
-![Preview](./Docs-images/form-opened.png)
+
+<img src="./Docs-images/suggestions-button.png" alt="Modal Preview" width="300" />
+<img src="./Docs-images/form-opened.png" alt="Form Design" width="300" />
 
 ### Sections
 
 - Each section (`.section-block`) includes a `.section-header` and `.section-content`
 - Content expands seamlessly with CSS transitions<br>
-  ![Preview](./Docs-images/Sections-open.png)
+<img src="./Docs-images/Sections-open.png" alt="Section Layout" width="300" />
 - Projects section has a shape for each project and its linked to a html page that has project details<br>
-  ![Preview](./Docs-images/project-section.png)
+<img src="./Docs-images/project-section.png" alt="Animation Preview" width="300" />
 - The details include overview, attachments, and linkin linked for collaborators<br>
 - The user can go back to the main page from the "Go Back button"<br>
-  ![Preview](./Docs-images/project-details.png)
-- The skills appear is this way<br>
-  ![Preview](./Docs-images/skils.png)
+  <img src="./Docs-images/project-details.png" alt="Social Icons" width="300" />
+- The skills appear this way<br>
+<img src="./Docs-images/skils.png" alt="Skills Section" width="300"  />
 
 ## 🎨 Styling Strategy
 
@@ -143,9 +130,9 @@ consistency across mobile views.*
   units. This not only simplifies maintenance but also ensures visual coherence across components.<br>
   Personal Logo:<br>
   <img src="./Docs-images/logo.png" alt="Personal Logo" width="100" />
-  Responsive layout: <br>
+  Responsive layout: <br><br>
   <img src="./Docs-images/res-desktop.png" alt="Responsive Desktop Layout" width="300" />
-  <img src="./Docs-images/res-mobile.png" alt="Responsive Mobile Layout" width="200" height="100"/>
+  <img src="./Docs-images/res-mobile.png" alt="Responsive Mobile Layout" width="300" height="300"/>
 
 ---
 
